@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>3781d836187c4d27a898b58f23ebd367</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="ps1-your-first-library-free-neural-network"
+class="cell markdown" id="LuoXusr9B3nd">
+<h1>PS1: Your first library-free neural network!</h1>
+<p>Advanced Learning 2024</p>
+</section>
+<div class="cell markdown" id="fRYKvBtcZj44">
+<p>For SUBMISSION:</p>
+<p>Please upload the complete and executed <code>ipynb</code> to your
+git repository. Verify that all of your output can be viewed directly
+from github, and provide a link to that git file below.</p>
+<pre><code>STUDENT ID: 209307396</code></pre>
+<pre><code>STUDENT GIT LINK: https://github.com/meirabar/Adv.-computational-learning-and-data-analysis---52025.git</code></pre>
+<p>In Addition, don't forget to add your ID to the files:</p>
+<p><code>PS1_Part2_HelloNN_2024_ID_[209307396].html</code></p>
+</div>
+<div class="cell code" data-execution_count="1" id="X2ZxCWBO_IIT">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np <span class="co"># You are allowed to use  only numpy.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span></code></pre></div>
+</div>
+<div class="cell markdown" id="CnAz84ZL_9XQ">
+<p><strong>Welcome</strong>.</p>
+<p>In this part of the problem set you are set to build a complete and
+flexible neural network.<br />
+This neural network will be library free (in the sense that we won't use
+PyTorch/Tensorflow/etc.).</p>
+<p>Let's do a quick review of the basic neural-network components:</p>
+<ul>
+<li><em>Layer</em> - can be fully connected (dense/hidden), convolution,
+etc.</li>
+<li>Forward propagation- the layer outputs the next layer's input</li>
+<li>Backward propagation- the layer also outputs the gradient descent
+update</li>
+<li><em>Activation</em> Layer (e.g. ReLU) - there are no parameters,
+only gradients with respect to the input. We want to compute both the
+gradient w.r.t the parameters of the layer and to create the gradient
+with respect to the layer's inputs</li>
+<li><em>Forward propagation</em>- the layer outputs the next layer's
+input</li>
+<li><em>Backward propagation</em>- the layer also outputs the gradient
+descent update</li>
+<li><em>Loss Function</em> : how our model quantifies the difference
+between the predicted outputs the actual (target) values<br />
+</li>
+<li><em>Network Wrapper</em>- wraps our components together as a
+trainable model.</li>
+</ul>
+</div>
+<div class="cell markdown" id="ncQsamml85JG">
+<p>Useful resource:</p>
+<ul>
+<li>Gradient descent for neural networks <a
+href="https://moodle4.cs.huji.ac.il/hu23/mod/resource/view.php?id=402297">cheat
+sheet</a>.</li>
+<li>Neural network architecture <a
+href="https://moodle4.cs.huji.ac.il/hu23/mod/url/view.php?id=402298">cheat
+sheet</a>.</li>
+</ul>
+</div>
+<section id="0-loading-data" class="cell markdown" id="P11k0GECXiR-">
+<h3>0. Loading data</h3>
+</section>
+<div class="cell markdown" id="lwLDOo7IXfcI">
+<p>You are going to test and evaluate your home-made network on the
+<code>mnist</code> dataset.<br />
+The MNIST dataset is a large dataset of handwritten digits that is
+commonly used for training various image and vision models.</p>
+</div>
+<div class="cell code" data-execution_count="2"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="RIxpddzDXgBN" data-outputId="cb9911b6-2cf2-4db2-8a4f-6abf7f55acaa">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.datasets <span class="im">import</span> mnist</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.utils <span class="im">import</span> to_categorical</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># load MNIST from server</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Using a standard library (keras.datasets) to load the mnist data</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>(x_train, y_train), (x_test, y_test) <span class="op">=</span> mnist.load_data()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+11490434/11490434 ━━━━━━━━━━━━━━━━━━━━ 0s 0us/step
+</code></pre>
+</div>
+</div>
+<section id="data-transformations" class="cell markdown"
+id="B_yaFDAtXj1h">
+<h4>Data transformations</h4>
+</section>
+<div class="cell code" data-execution_count="3" id="3PooYSGAgY4v">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># training data : 60000 samples</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># reshape and normalize input data</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>x_train <span class="op">=</span> x_train.reshape(x_train.shape[<span class="dv">0</span>], <span class="dv">1</span>, <span class="dv">28</span><span class="op">*</span><span class="dv">28</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>x_train <span class="op">=</span> x_train.astype(<span class="st">&#39;float32&#39;</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>x_train <span class="op">/=</span> <span class="dv">255</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># One-hot encoding of the output.</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Currently a number in range [0,9]; Change into a vector of size 10</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># e.g. number 3 will become [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>y_train <span class="op">=</span> to_categorical(y_train)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># same for test data : 10000 samples</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>x_test <span class="op">=</span> x_test.reshape(x_test.shape[<span class="dv">0</span>], <span class="dv">1</span>, <span class="dv">28</span><span class="op">*</span><span class="dv">28</span>)</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>x_test <span class="op">=</span> x_test.astype(<span class="st">&#39;float32&#39;</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>x_test <span class="op">/=</span> <span class="dv">255</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>y_test <span class="op">=</span> to_categorical(y_test)</span></code></pre></div>
+</div>
+<section id="1-networks-components" class="cell markdown"
+id="q8HGS8h1uXAD">
+<h3>1. Network's Components</h3>
+</section>
+<div class="cell markdown" id="Hda7HDt6NMg1">
+<p>Please fill-in the missing code in the code boxes below (only where
+<code>#### SOLUTION REQUIRED ####</code> is specified).</p>
+</div>
+<div class="cell code" data-execution_count="4" id="zi3-57RaG-YW">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># This class is a general layer primitive, defining that each instance must</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># have an (input,output) parameters, and 2 functions: forward+backward propogation</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Layer_Primitive:</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.<span class="bu">input</span> <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.output <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># computes the output Y of a layer for a given input X</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward_propagation(<span class="va">self</span>, <span class="bu">input</span>):</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">NotImplementedError</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># computes dE/dX for a given dE/dY (and update parameters if any)</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> backward_propagation(<span class="va">self</span>, output_error, learning_rate):</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">NotImplementedError</span></span></code></pre></div>
+</div>
+<section id="fully-connected-layer" class="cell markdown"
+id="kFrfWvZFoxGz">
+<h4>Fully Connected Layer</h4>
+</section>
+<div class="cell markdown" id="fZnNmnfjDqBg">
+<p>A fully-connected layer (a.k.a. affine, dense,linear layer) connects
+every input neuron to every output neuron.<br />
+It has 2 parameters: (input, output).<br />
+You need to define (code) the following:</p>
+<ul>
+<li>its initialization weights with random weights.</li>
+<li>the forward propogation calculation (as shown in class).</li>
+<li>the backward propogation gradients calculation (given output, as
+shown in class).</li>
+</ul>
+<p>Parameters must be intitialized with some values. There are many ways
+to initialize the weights, and you are encouraged to do a quick research
+about the common methods. Any commonly used method will be accepted.</p>
+</div>
+<div class="cell markdown" id="b2vegoAGNSdm">
+<p>1.1 (20 pts)</p>
+</div>
+<div class="cell code" data-execution_count="5" id="1oPtObGHL0qA">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#### SOLUTION REQUIRED ####</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># inherit from base class Layer</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Affine_Layer(Layer_Primitive):</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># input_size = number of input neurons</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># output_size = number of output neurons</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, input_size, output_size):</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>         <span class="co"># Randomly initializing of weights using Xavier</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>        limit <span class="op">=</span> np.sqrt(<span class="dv">6</span> <span class="op">/</span> (input_size <span class="op">+</span> output_size))</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.weights <span class="op">=</span> np.random.uniform(<span class="op">-</span>limit, limit, (input_size, output_size))</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># initializing bias to zero</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.bias <span class="op">=</span> np.zeros((<span class="dv">1</span>,output_size))</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># returns output for a given input</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward_propagation(<span class="va">self</span>, input_data):</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.<span class="bu">input</span> <span class="op">=</span> input_data</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.output <span class="op">=</span> np.dot(<span class="va">self</span>.<span class="bu">input</span>, <span class="va">self</span>.weights) <span class="op">+</span> <span class="va">self</span>.bias</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.output</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    <span class="co"># computes dE/dW, dE/dB for a given output_error=dE/dY. Returns input_error=dE/dX.</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> backward_propagation(<span class="va">self</span>, output_grad, learning_rate):</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>        input_error <span class="op">=</span> np.dot(output_grad, <span class="va">self</span>.weights.T)</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>        weights_error <span class="op">=</span> np.dot(<span class="va">self</span>.<span class="bu">input</span>.T, output_grad)</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Compute gradient w.r.t. biases (dE/dB)</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>        bias_error <span class="op">=</span> np.<span class="bu">sum</span>(output_grad, axis<span class="op">=</span><span class="dv">0</span>, keepdims<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>        <span class="co"># update parameters</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.weights <span class="op">-=</span> learning_rate <span class="op">*</span> weights_error</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.bias <span class="op">-=</span> learning_rate <span class="op">*</span> bias_error</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> input_error</span></code></pre></div>
+</div>
+<section id="activation-layers" class="cell markdown" id="Uktf9H2UuhYR">
+<h4>Activation layers</h4>
+</section>
+<div class="cell markdown" id="nbjwalPGEgLy">
+<p>Activation functions are often a non-linear functions that aid in how
+well the network model adapts to and learns the training dataset. The
+choice of activation function in the output layer will define the type
+of predictions the model can make.</p>
+</div>
+<div class="cell code" data-execution_count="6" id="Mg5f_-ikVMzi">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># inherit from base class Layer</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> ActivationLayer(Layer_Primitive):</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, activation, activation_grad):</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.activation <span class="op">=</span> activation</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.activation_grad <span class="op">=</span> activation_grad</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># returns the activated input</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward_propagation(<span class="va">self</span>, input_data):</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.<span class="bu">input</span> <span class="op">=</span> input_data</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.output <span class="op">=</span> <span class="va">self</span>.activation(<span class="va">self</span>.<span class="bu">input</span>)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.output</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Returns input_error=dE/dX for a given output_grad=dE/dY.</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># learning_rate is not used because there is no &quot;learnable&quot; parameters.</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> backward_propagation(<span class="va">self</span>, output_grad, learning_rate):</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.activation_grad(<span class="va">self</span>.<span class="bu">input</span>) <span class="op">*</span> output_grad</span></code></pre></div>
+</div>
+<div class="cell markdown" id="FaB7AX-aFP1j">
+<p>You need to define (code) the following via different functions:</p>
+<ul>
+<li>the forward propogation calculation (as shown in class).</li>
+<li>the backward propogation gradients calculation (given output, as
+shown in class).</li>
+</ul>
+</div>
+<div class="cell markdown" id="fbvilWixNaro">
+<p>1.2 (20 pts)</p>
+</div>
+<div class="cell code" data-execution_count="7" id="4-M9-LPBgBTB">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#### SOLUTION REQUIRED ####</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># activation functions and their derivatives:</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> tanh(x):</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.tanh(x)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> tanh_grad(x):</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">1</span> <span class="op">-</span> np.tanh(x) <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> relu(x):</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.maximum(<span class="dv">0</span>, x)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> relu_grad(x):</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (x <span class="op">&gt;</span> <span class="dv">0</span>).astype(<span class="bu">float</span>)</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sigmoid(x):</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">1</span> <span class="op">/</span> (<span class="dv">1</span> <span class="op">+</span> np.exp(<span class="op">-</span>x))</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sigmoid_grad(x):</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    sig <span class="op">=</span> sigmoid(x)</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> sig <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> sig)</span></code></pre></div>
+</div>
+<section id="loss-function" class="cell markdown" id="s3RBktf7uowi">
+<h4>Loss function</h4>
+</section>
+<div class="cell markdown" id="RgZ4SRFkG_Sj">
+<p>1.3 (10 pts)</p>
+</div>
+<div class="cell code" data-execution_count="8" id="uo_FcJrYgQaB">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#### SOLUTION REQUIRED ####</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># loss function and its derivative</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mse(y_true, y_pred):</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.mean((y_true <span class="op">-</span> y_pred) <span class="op">**</span> <span class="dv">2</span>)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> mse_grad(y_true, y_pred):</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">2</span> <span class="op">*</span> (y_pred <span class="op">-</span> y_true) <span class="op">/</span> y_true.size</span></code></pre></div>
+</div>
+<section id="putting-everything-together" class="cell markdown"
+id="V4jPsOT9uy-_">
+<h4>Putting everything together</h4>
+</section>
+<div class="cell markdown" id="fEK-tOfrNhO_">
+<p>1.4 (10 pts)</p>
+</div>
+<div class="cell code" data-execution_count="9" id="fMwSnK5pgV9Y">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#### SOLUTION REQUIRED (in `predict`) ####</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> MyNetwork:</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.layers <span class="op">=</span> []</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.loss <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.loss_grad <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># add layer to network</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> add(<span class="va">self</span>, layer):</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.layers.append(layer)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># set loss to use</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> use_loss(<span class="va">self</span>, loss, loss_grad):</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.loss <span class="op">=</span> loss</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.loss_grad <span class="op">=</span> loss_grad</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># train the network</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> fit(<span class="va">self</span>, x_train, y_train, epochs, learning_rate):</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>        <span class="co"># sample dimension first</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>        samples <span class="op">=</span> <span class="bu">len</span>(x_train)</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>        <span class="co"># training loop</span></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(epochs):</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>            err <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(samples):</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>                <span class="co"># forward propagation</span></span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>                output <span class="op">=</span> x_train[j]</span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> layer <span class="kw">in</span> <span class="va">self</span>.layers:</span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>                    output <span class="op">=</span> layer.forward_propagation(output)</span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a>                <span class="co"># compute loss (for display purpose only)</span></span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a>                err <span class="op">+=</span> <span class="va">self</span>.loss(y_train[j], output)</span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a>                <span class="co"># backward propagation</span></span>
+<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a>                grad <span class="op">=</span> <span class="va">self</span>.loss_grad(y_train[j], output)</span>
+<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a>                <span class="cf">for</span> layer <span class="kw">in</span> <span class="bu">reversed</span>(<span class="va">self</span>.layers):</span>
+<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a>                    grad <span class="op">=</span> layer.backward_propagation(grad, learning_rate)</span>
+<span id="cb12-40"><a href="#cb12-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a>            <span class="co"># calculate average error on all samples</span></span>
+<span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a>            err <span class="op">/=</span> samples</span>
+<span id="cb12-43"><a href="#cb12-43" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">&#39;Training epoch </span><span class="sc">%d</span><span class="st">/</span><span class="sc">%d</span><span class="st">   error=</span><span class="sc">%f</span><span class="st">&#39;</span> <span class="op">%</span> (i<span class="op">+</span><span class="dv">1</span>, epochs, err))</span>
+<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-45"><a href="#cb12-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-46"><a href="#cb12-46" aria-hidden="true" tabindex="-1"></a>    <span class="co"># predict output for given input</span></span>
+<span id="cb12-47"><a href="#cb12-47" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> predict(<span class="va">self</span>, x_test,y_test<span class="op">=</span>np.array([])):</span>
+<span id="cb12-48"><a href="#cb12-48" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> y_test.size:</span>
+<span id="cb12-49"><a href="#cb12-49" aria-hidden="true" tabindex="-1"></a>           <span class="cf">assert</span> <span class="bu">len</span>(x_test)<span class="op">==</span><span class="bu">len</span>(y_test) <span class="co"># if Y is given</span></span>
+<span id="cb12-50"><a href="#cb12-50" aria-hidden="true" tabindex="-1"></a>        <span class="co"># sample dimension first</span></span>
+<span id="cb12-51"><a href="#cb12-51" aria-hidden="true" tabindex="-1"></a>        samples <span class="op">=</span> <span class="bu">len</span>(x_test)</span>
+<span id="cb12-52"><a href="#cb12-52" aria-hidden="true" tabindex="-1"></a>        result <span class="op">=</span> []</span>
+<span id="cb12-53"><a href="#cb12-53" aria-hidden="true" tabindex="-1"></a>        loss <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb12-54"><a href="#cb12-54" aria-hidden="true" tabindex="-1"></a>        correct <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb12-55"><a href="#cb12-55" aria-hidden="true" tabindex="-1"></a>        <span class="co"># run network over all samples</span></span>
+<span id="cb12-56"><a href="#cb12-56" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(samples):</span>
+<span id="cb12-57"><a href="#cb12-57" aria-hidden="true" tabindex="-1"></a>            <span class="co"># forward propagation</span></span>
+<span id="cb12-58"><a href="#cb12-58" aria-hidden="true" tabindex="-1"></a>            output <span class="op">=</span> x_test[i]</span>
+<span id="cb12-59"><a href="#cb12-59" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> layer <span class="kw">in</span> <span class="va">self</span>.layers:</span>
+<span id="cb12-60"><a href="#cb12-60" aria-hidden="true" tabindex="-1"></a>                output <span class="op">=</span> layer.forward_propagation(output)</span>
+<span id="cb12-61"><a href="#cb12-61" aria-hidden="true" tabindex="-1"></a>            result.append(output)</span>
+<span id="cb12-62"><a href="#cb12-62" aria-hidden="true" tabindex="-1"></a>            <span class="co"># ONLY IF LABELS ARE GIVEN (Y):</span></span>
+<span id="cb12-63"><a href="#cb12-63" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> y_test.size:</span>
+<span id="cb12-64"><a href="#cb12-64" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Evaluate the output against Y,</span></span>
+<span id="cb12-65"><a href="#cb12-65" aria-hidden="true" tabindex="-1"></a>                <span class="co"># calculate loss against Y, add to `loss`:</span></span>
+<span id="cb12-66"><a href="#cb12-66" aria-hidden="true" tabindex="-1"></a>                loss <span class="op">+=</span> <span class="va">self</span>.loss(y_test[i], output)</span>
+<span id="cb12-67"><a href="#cb12-67" aria-hidden="true" tabindex="-1"></a>                target <span class="op">=</span> y_test[i]</span>
+<span id="cb12-68"><a href="#cb12-68" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Evaluate the label of the output against real, and if identical,</span></span>
+<span id="cb12-69"><a href="#cb12-69" aria-hidden="true" tabindex="-1"></a>                <span class="co"># add +1 to `correct`:</span></span>
+<span id="cb12-70"><a href="#cb12-70" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span>  np.argmax(output) <span class="op">==</span> np.argmax(target):</span>
+<span id="cb12-71"><a href="#cb12-71" aria-hidden="true" tabindex="-1"></a>                   correct <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb12-72"><a href="#cb12-72" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> y_test.size:</span>
+<span id="cb12-73"><a href="#cb12-73" aria-hidden="true" tabindex="-1"></a>            mean_loss <span class="op">=</span> loss<span class="op">/</span>samples</span>
+<span id="cb12-74"><a href="#cb12-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-75"><a href="#cb12-75" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Test set: Avg. loss: </span><span class="sc">{:.4f}</span><span class="st">, Accuracy: </span><span class="sc">{}</span><span class="st">/</span><span class="sc">{}</span><span class="st"> (</span><span class="sc">{:.0f}</span><span class="st">%)</span><span class="ch">\n</span><span class="st">&#39;</span>.</span>
+<span id="cb12-76"><a href="#cb12-76" aria-hidden="true" tabindex="-1"></a>                  <span class="bu">format</span>(mean_loss, correct, samples,<span class="fl">100.</span> <span class="op">*</span> correct <span class="op">/</span> samples))</span>
+<span id="cb12-77"><a href="#cb12-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-78"><a href="#cb12-78" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> result</span></code></pre></div>
+</div>
+<section id="2-testing-your-neural-network" class="cell markdown"
+id="dCXXcALGXSRb">
+<h2>2. Testing Your Neural Network</h2>
+</section>
+<section id="defining-our-main-neural-network-architecture"
+class="cell markdown" id="KotuuqWKXt2r">
+<h3>Defining our main neural network architecture</h3>
+</section>
+<div class="cell markdown" id="wzatylPzQIdR">
+<p>Define your network's architecture:<br />
+(Please rationalize your choice of activation funciton.)</p>
+<ul>
+<li>first affine layer that takes your input and outputs 128 nodes</li>
+<li><code>tanh/relu/sigmoid</code> activation layer following the first
+affine layer</li>
+<li>second affine layer that takes the first layer's input and outputs
+64 nodes</li>
+<li><code>tanh/relu/sigmoid</code> activation layer following the second
+affine layer</li>
+<li>third affine layer that takes your second layer's input and outputs
+nodes in the size of the Y labels.</li>
+<li><code>tanh/relu/sigmoid</code> activation layer following the last
+affine layer</li>
+</ul>
+</div>
+<div class="cell markdown" id="kSwlLJXWNqii">
+<p>2.1 (5 pts)</p>
+</div>
+<div class="cell code" data-execution_count="10" id="U5XCamqip3Q1">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#### SOLUTION REQUIRED (in `predict`) ####</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>net <span class="op">=</span> MyNetwork()</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>net.add(Affine_Layer(input_size<span class="op">=</span><span class="dv">28</span><span class="op">*</span><span class="dv">28</span>, output_size<span class="op">=</span><span class="dv">128</span>))</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>net.add(ActivationLayer(activation<span class="op">=</span>relu, activation_grad<span class="op">=</span>relu_grad))</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>net.add(Affine_Layer(input_size<span class="op">=</span><span class="dv">128</span>, output_size<span class="op">=</span><span class="dv">64</span>))</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>net.add(ActivationLayer(activation<span class="op">=</span>relu, activation_grad<span class="op">=</span>relu_grad))</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>net.add(Affine_Layer(input_size<span class="op">=</span><span class="dv">64</span>, output_size<span class="op">=</span>y_train.shape[<span class="dv">1</span>]))</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>net.add(ActivationLayer(activation<span class="op">=</span>relu, activation_grad<span class="op">=</span>relu_grad))</span></code></pre></div>
+</div>
+<section id="training" class="cell markdown" id="o8_5gnOuuxWC">
+<h3>Training!</h3>
+</section>
+<div class="cell code" data-execution_count="11"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="QhWuBFBfg3SB" data-outputId="69043829-bd57-4b0b-e29d-8f804326bea4">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># While developing, it is recommended to train your model on a subset of the data... / or low epochs.</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># as we didn&#39;t implemented mini-batch GD, training will be pretty slow if we update at each iteration on 60000 samples...</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>net.use_loss(mse, mse_grad)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>epoch_num <span class="op">=</span> <span class="dv">20</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>lr <span class="op">=</span> <span class="fl">0.01</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> time.time()</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>net.fit(x_train, y_train, epochs<span class="op">=</span>epoch_num, learning_rate<span class="op">=</span>lr)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Total process time: </span><span class="sc">{</span><span class="bu">round</span>(time.time() <span class="op">-</span> t1,<span class="dv">3</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Training epoch 1/20   error=0.018619
+Training epoch 2/20   error=0.010047
+Training epoch 3/20   error=0.007878
+Training epoch 4/20   error=0.006704
+Training epoch 5/20   error=0.005919
+Training epoch 6/20   error=0.005351
+Training epoch 7/20   error=0.004911
+Training epoch 8/20   error=0.004555
+Training epoch 9/20   error=0.004250
+Training epoch 10/20   error=0.003989
+Training epoch 11/20   error=0.003750
+Training epoch 12/20   error=0.003541
+Training epoch 13/20   error=0.003356
+Training epoch 14/20   error=0.003186
+Training epoch 15/20   error=0.003033
+Training epoch 16/20   error=0.002891
+Training epoch 17/20   error=0.002762
+Training epoch 18/20   error=0.002641
+Training epoch 19/20   error=0.002528
+Training epoch 20/20   error=0.002420
+Total process time: 1028.488
+</code></pre>
+</div>
+</div>
+<section id="evaluation" class="cell markdown" id="kXwnmpjlu5sa">
+<h3>Evaluation</h3>
+</section>
+<div class="cell markdown" id="Hhz13JznTujh">
+<p>Exciting! Now is the time to test your model.</p>
+<pre><code>May the gradients be always in your favor.</code></pre>
+</div>
+<div class="cell code" data-execution_count="12"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="BHDYRUoq54Fk" data-outputId="d29e9e6c-bf02-44dd-93fc-cb52bcb4410f">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>output <span class="op">=</span> net.predict(x_test ,y_test )</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+Test set: Avg. loss: 0.0046, Accuracy: 9782/10000 (98%)
+
+</code></pre>
+</div>
+</div>
+<section id="3-benchmarking-against-pytorch" class="cell markdown"
+id="S9HEZ6ElvVVj">
+<h2>3. Benchmarking against PyTorch</h2>
+</section>
+<div class="cell markdown" id="Z-0UWnaYUNz7">
+<p>How well your model performs against a similar-architecture PyTorch
+model?<br />
+It is time to find out:</p>
+</div>
+<div class="cell code" data-execution_count="13" id="R2TeiObsnBr1">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn <span class="im">as</span> nn</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn.functional <span class="im">as</span> F</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch.utils.data <span class="im">import</span> TensorDataset</span></code></pre></div>
+</div>
+<section id="prepare-the-data-as-tensors-using-pytorch-dataloader"
+class="cell markdown" id="-h8cCoV3ZSkt">
+<h4>Prepare the data as tensors using PyTorch DataLoader:</h4>
+</section>
+<div class="cell code" data-execution_count="14" id="1rqwlzUIvFCZ">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>t_train <span class="op">=</span>  TensorDataset(torch.Tensor(x_train),torch.Tensor(y_train))</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>t_test <span class="op">=</span>  TensorDataset(torch.Tensor(x_test),torch.Tensor(y_test))</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>train_loader <span class="op">=</span> torch.utils.data.DataLoader(dataset<span class="op">=</span>t_train, batch_size<span class="op">=</span><span class="dv">64</span>, shuffle<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>test_loader <span class="op">=</span> torch.utils.data.DataLoader(dataset<span class="op">=</span>t_test, batch_size<span class="op">=</span><span class="dv">64</span>, shuffle<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+</div>
+<div class="cell markdown" id="0Ngm-Gv_UsCV">
+<p>Define a <code>PyTorchNet</code> class with an identical architecture
+you used in your home-made network.</p>
+</div>
+<div class="cell markdown" id="mJBs2JsyNxid">
+<p>3.1 (10 pts)</p>
+</div>
+<div class="cell code" data-execution_count="15" id="4Ed2P1LmUpgS">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#### SOLUTION REQUIRED  ####</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> PyTorchNet(nn.Module):</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>(PyTorchNet, <span class="va">self</span>).<span class="fu">__init__</span>()</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Define input size and number of classes</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>        input_size <span class="op">=</span> <span class="dv">28</span> <span class="op">*</span> <span class="dv">28</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>        num_classes <span class="op">=</span> y_train.shape[<span class="dv">1</span>]</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Define layers</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fc1 <span class="op">=</span> nn.Linear(input_size, <span class="dv">128</span>)</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.activ1 <span class="op">=</span> nn.ReLU()</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fc2 <span class="op">=</span> nn.Linear(<span class="dv">128</span>, <span class="dv">64</span>)</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.activ2 <span class="op">=</span> nn.ReLU()</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fc3 <span class="op">=</span> nn.Linear(<span class="dv">64</span>, num_classes)</span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.activ3 <span class="op">=</span> nn.ReLU()</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, x):</span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> x.view(<span class="op">-</span><span class="dv">1</span>, <span class="dv">28</span> <span class="op">*</span> <span class="dv">28</span>)</span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="va">self</span>.activ1(<span class="va">self</span>.fc1(x))</span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="va">self</span>.activ2(<span class="va">self</span>.fc2(x))</span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="va">self</span>.activ3(<span class="va">self</span>.fc3(x))</span>
+<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> x</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="16"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="fG-8BEdDlL4L" data-outputId="3f081a9e-1192-475f-cf8d-801059d6c0b8">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Train the model</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>num_epochs <span class="op">=</span> <span class="dv">20</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>pt_learning_rate <span class="op">=</span> <span class="fl">0.01</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>pt_network <span class="op">=</span> PyTorchNet()</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>optimizer <span class="op">=</span> torch.optim.Adam(pt_network.parameters(), lr<span class="op">=</span>pt_learning_rate)</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>criterion <span class="op">=</span> nn.MSELoss()</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> epoch <span class="kw">in</span> <span class="bu">range</span>(num_epochs):</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, (images, labels) <span class="kw">in</span> <span class="bu">enumerate</span>(train_loader):</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Forward pass</span></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>        outputs <span class="op">=</span> pt_network(images)</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>        loss <span class="op">=</span> criterion(outputs, labels)</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Backward pass and optimize</span></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>        optimizer.zero_grad()</span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>        loss.backward()</span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>        optimizer.step()</span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a>        <span class="co"># A handy printout:</span></span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (i <span class="op">+</span> <span class="dv">1</span>) <span class="op">%</span> <span class="dv">500</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&#39;Epoch [</span><span class="sc">{</span>epoch<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>num_epochs<span class="sc">}</span><span class="ss">], Step [</span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">/</span><span class="sc">{</span><span class="bu">len</span>(train_loader)<span class="sc">}</span><span class="ss">], Loss: </span><span class="sc">{</span>loss<span class="sc">.</span>item()<span class="sc">:.4f}</span><span class="ss">&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch [1/20], Step [500/938], Loss: 0.0379
+Epoch [2/20], Step [500/938], Loss: 0.0359
+Epoch [3/20], Step [500/938], Loss: 0.0457
+Epoch [4/20], Step [500/938], Loss: 0.0355
+Epoch [5/20], Step [500/938], Loss: 0.0456
+Epoch [6/20], Step [500/938], Loss: 0.0445
+Epoch [7/20], Step [500/938], Loss: 0.0421
+Epoch [8/20], Step [500/938], Loss: 0.0432
+Epoch [9/20], Step [500/938], Loss: 0.0341
+Epoch [10/20], Step [500/938], Loss: 0.0519
+Epoch [11/20], Step [500/938], Loss: 0.0443
+Epoch [12/20], Step [500/938], Loss: 0.0426
+Epoch [13/20], Step [500/938], Loss: 0.0434
+Epoch [14/20], Step [500/938], Loss: 0.0373
+Epoch [15/20], Step [500/938], Loss: 0.0425
+Epoch [16/20], Step [500/938], Loss: 0.0524
+Epoch [17/20], Step [500/938], Loss: 0.0392
+Epoch [18/20], Step [500/938], Loss: 0.0354
+Epoch [19/20], Step [500/938], Loss: 0.0340
+Epoch [20/20], Step [500/938], Loss: 0.0441
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="L3rFfBfaV3Gt">
+<p>Evaluation:</p>
+</div>
+<div class="cell code" data-execution_count="17"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="RsfDSk2IrXst" data-outputId="2d4da7bc-4ac3-402d-b6f3-b356661aea7f">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>pt_network.<span class="bu">eval</span>()</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>test_losses <span class="op">=</span> []</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>test_loss <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>correct <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> data, target <span class="kw">in</span> test_loader:</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>        output <span class="op">=</span> pt_network(data)</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>        test_loss <span class="op">+=</span> criterion(output, target,)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>        pred <span class="op">=</span> output.data.<span class="bu">max</span>(<span class="dv">1</span>, keepdim<span class="op">=</span><span class="va">True</span>)[<span class="dv">1</span>]</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>        correct <span class="op">+=</span> pred.eq(target.data.<span class="bu">max</span>(<span class="dv">1</span>,keepdim<span class="op">=</span><span class="va">True</span>)[<span class="dv">1</span>]).<span class="bu">sum</span>()</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>test_loss <span class="op">/=</span> <span class="bu">len</span>(test_loader.dataset)</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>test_losses.append(test_loss)</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Test set: Avg. loss: </span><span class="sc">{:.4f}</span><span class="st">, Accuracy: </span><span class="sc">{}</span><span class="st">/</span><span class="sc">{}</span><span class="st"> (</span><span class="sc">{:.0f}</span><span class="st">%)</span><span class="ch">\n</span><span class="st">&#39;</span>.<span class="bu">format</span>(</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>  test_loss, correct, <span class="bu">len</span>(test_loader.dataset),</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>  <span class="fl">100.</span> <span class="op">*</span> correct <span class="op">/</span> <span class="bu">len</span>(test_loader.dataset)))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+Test set: Avg. loss: 0.0007, Accuracy: 6756/10000 (68%)
+
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="EyKXHGW3XsAN">
+<p>3.2 (10 pts)</p>
+</div>
+<div class="cell markdown" id="dI13KBVgrBkc">
+<p>Time for some questions:</p>
+<ol>
+<li>Which one of the models performed better? Why?</li>
+<li>Which one of the models performed faster? Why?<br />
+</li>
+<li>What would you change in your network's architecture?<br />
+</li>
+<li>What would you change in your model's solution algorithm?</li>
+</ol>
+</div>
+<div class="cell markdown" id="cb6AMtbuXvSR">
+<p>Write your solutions here:</p>
+<ol>
+<li><p>my neural network from scratch was better then the torch model
+with a an accuracy of 98%, while the torch model got only 68% accuracy,
+probably because incorrect layers or training issues.</p></li>
+<li><p>the pytorch model probably performed faster due to optimizations
+like GPU support and faster batch processing, which are not present in
+the from scratch network.</p></li>
+<li><p>i would change in the from scratch network maybe trying other
+activation functions like LeakyReLU or adding more layers to better
+generalize.</p></li>
+</ol>
+<p>4.to improve the from scratch model i would try an optimized
+optimizer like AdamW and add a learning rate scheduler too get the best
+learning rate instead of guessing.</p>
+</div>
+<section id="4-the-network-wars" class="cell markdown"
+id="mmJYjygWrCAg">
+<h2>4. The Network Wars!</h2>
+</section>
+<div class="cell markdown" id="y_bdbde5Wj-y">
+<p>Here is your chance to play with your model's architecture in order
+to break your own benchmark set eariler.<br />
+You can add/remove layers, play with their sizes, types, etc.<br />
+You can add a new loss if you wish, or anything else that will fairly
+give your model an advantage over base.</p>
+</div>
+<div class="cell markdown" id="oG2hhaeyN59O">
+<p>4.1 (15 pts)</p>
+</div>
+<div class="cell code" data-execution_count="19" id="1EsyNK77rGcG">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co">#### SOLUTION REQUIRED  ####</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> PyTorchNet(nn.Module):</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>(PyTorchNet, <span class="va">self</span>).<span class="fu">__init__</span>()</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Define input size and number of classes</span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>        input_size <span class="op">=</span> <span class="dv">28</span> <span class="op">*</span> <span class="dv">28</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>        num_classes <span class="op">=</span> y_train.shape[<span class="dv">1</span>]</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Define layers</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fc1 <span class="op">=</span> nn.Linear(input_size, <span class="dv">128</span>)</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.activ1 <span class="op">=</span> nn.ReLU()</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fc2 <span class="op">=</span> nn.Linear(<span class="dv">128</span>, <span class="dv">64</span>)</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.activ2 <span class="op">=</span> nn.ReLU()</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fc3 <span class="op">=</span> nn.Linear(<span class="dv">64</span>, num_classes)</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.activ3 <span class="op">=</span> nn.ReLU()</span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, x):</span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> x.view(<span class="op">-</span><span class="dv">1</span>, <span class="dv">28</span> <span class="op">*</span> <span class="dv">28</span>)</span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="va">self</span>.activ1(<span class="va">self</span>.fc1(x))</span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="va">self</span>.activ2(<span class="va">self</span>.fc2(x))</span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="va">self</span>.fc3(x)</span>
+<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>        <span class="co"># x = self.activ3(self.fc3(x))</span></span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> x</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="20"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="-iLL7mJFH1WC" data-outputId="995ce479-e9a7-43f5-effc-9650aba35bd3">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Train the model</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>num_epochs <span class="op">=</span> <span class="dv">20</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>pt_learning_rate <span class="op">=</span> <span class="fl">0.001</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>pt_network <span class="op">=</span> PyTorchNet()</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>optimizer <span class="op">=</span> torch.optim.Adam(pt_network.parameters(), lr<span class="op">=</span>pt_learning_rate)</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>criterion <span class="op">=</span> nn.MSELoss()</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> epoch <span class="kw">in</span> <span class="bu">range</span>(num_epochs):</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, (images, labels) <span class="kw">in</span> <span class="bu">enumerate</span>(train_loader):</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Forward pass</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>        outputs <span class="op">=</span> pt_network(images)</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>        loss <span class="op">=</span> criterion(outputs, labels)</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Backward pass and optimize</span></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>        optimizer.zero_grad()</span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>        loss.backward()</span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>        optimizer.step()</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>        <span class="co"># A handy printout:</span></span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (i <span class="op">+</span> <span class="dv">1</span>) <span class="op">%</span> <span class="dv">500</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&#39;Epoch [</span><span class="sc">{</span>epoch<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>num_epochs<span class="sc">}</span><span class="ss">], Step [</span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">/</span><span class="sc">{</span><span class="bu">len</span>(train_loader)<span class="sc">}</span><span class="ss">], Loss: </span><span class="sc">{</span>loss<span class="sc">.</span>item()<span class="sc">:.4f}</span><span class="ss">&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch [1/20], Step [500/938], Loss: 0.0109
+Epoch [2/20], Step [500/938], Loss: 0.0065
+Epoch [3/20], Step [500/938], Loss: 0.0036
+Epoch [4/20], Step [500/938], Loss: 0.0101
+Epoch [5/20], Step [500/938], Loss: 0.0054
+Epoch [6/20], Step [500/938], Loss: 0.0022
+Epoch [7/20], Step [500/938], Loss: 0.0054
+Epoch [8/20], Step [500/938], Loss: 0.0014
+Epoch [9/20], Step [500/938], Loss: 0.0007
+Epoch [10/20], Step [500/938], Loss: 0.0025
+Epoch [11/20], Step [500/938], Loss: 0.0037
+Epoch [12/20], Step [500/938], Loss: 0.0009
+Epoch [13/20], Step [500/938], Loss: 0.0017
+Epoch [14/20], Step [500/938], Loss: 0.0007
+Epoch [15/20], Step [500/938], Loss: 0.0012
+Epoch [16/20], Step [500/938], Loss: 0.0011
+Epoch [17/20], Step [500/938], Loss: 0.0029
+Epoch [18/20], Step [500/938], Loss: 0.0005
+Epoch [19/20], Step [500/938], Loss: 0.0003
+Epoch [20/20], Step [500/938], Loss: 0.0009
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="21"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="rQhizEIdH1cf" data-outputId="09ba4cde-67d5-4975-cb21-d2696bd7889b">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>pt_network.<span class="bu">eval</span>()</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>test_losses <span class="op">=</span> []</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>test_loss <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>correct <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> data, target <span class="kw">in</span> test_loader:</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>        output <span class="op">=</span> pt_network(data)</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>        test_loss <span class="op">+=</span> criterion(output, target,)</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>        pred <span class="op">=</span> output.data.<span class="bu">max</span>(<span class="dv">1</span>, keepdim<span class="op">=</span><span class="va">True</span>)[<span class="dv">1</span>]</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>        correct <span class="op">+=</span> pred.eq(target.data.<span class="bu">max</span>(<span class="dv">1</span>,keepdim<span class="op">=</span><span class="va">True</span>)[<span class="dv">1</span>]).<span class="bu">sum</span>()</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>test_loss <span class="op">/=</span> <span class="bu">len</span>(test_loader.dataset)</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>test_losses.append(test_loss)</span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Test set: Avg. loss: </span><span class="sc">{:.4f}</span><span class="st">, Accuracy: </span><span class="sc">{}</span><span class="st">/</span><span class="sc">{}</span><span class="st"> (</span><span class="sc">{:.0f}</span><span class="st">%)</span><span class="ch">\n</span><span class="st">&#39;</span>.<span class="bu">format</span>(</span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>  test_loss, correct, <span class="bu">len</span>(test_loader.dataset),</span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>  <span class="fl">100.</span> <span class="op">*</span> correct <span class="op">/</span> <span class="bu">len</span>(test_loader.dataset)))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>
+Test set: Avg. loss: 0.0001, Accuracy: 9788/10000 (98%)
+
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="DXOnhv7KJeWK">
+<p>here i changed the learning rate by playing with different ones
+untill i got a higher accuracy and removed the last activation to get an
+accuracy of 98% just like the numpy version of the network</p>
+</div>
+</body>
+</html>
